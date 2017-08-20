@@ -23,14 +23,17 @@ module.exports = function(app) {
 
 	// Changes a burger property devoured to true
 	app.put("/:id", function(req,res) {
+
 		db.Burger.update(
 			req.body,
+			// {devoured:1},
 			{
 				where: {
 					id: req.params.id
 				}
-			}).then(function() {
-				res.redirect("/");
-			});
+			}
+		).then(function() {
+			res.redirect("/");
+		});
 	});
 }
