@@ -6,7 +6,12 @@ module.exports = function(app) {
 
 	// Lists all the burgers from the database to the page
 	app.get("/",function(req,res) {
-		db.Burger.findAll({}).then(function(data) {
+		db.Burger.findAll({
+			// Sorts Aphebetically
+			order:[
+				["burger_name", 'ASC']
+			]
+		}).then(function(data) {
 			var handleBarObj = {
 				burgers: data
 			};
