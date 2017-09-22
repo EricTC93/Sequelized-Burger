@@ -1,36 +1,22 @@
-# sequelized-burger
-
+![Title](/public/assets/img/Burger-Eater.PNG)
 
 > This module is similar to my Burger-Eater.  The difference is that I will now be using sequelize instead of orms. There will be added fuctionality such as: there will be a list of customers and burgers will be attached to a specific customer and input validation.
 
-## Table of Contents
+Homepage
 
-- [Install](#install)
-- [Usage](#usage)
-- [Maintainers](#maintainers)
-- [Contribute](#contribute)
-- [License](#license)
+![Home](/public/assets/img/Burger-Eater-Home.PNG)
 
-## Install
 
-```
-```
+User types a type of burger
 
-## Usage
+![Input](/public/assets/img/Burger-Eater-Input.PNG)
 
-```
-```
 
-## Maintainers
+User's submitted burger is added to the list of burgers on the left. Burgers are now sorted alphabetically
 
-[@YETC7](https://github.com/YETC7)
+![Display](/public/assets/img/Burger-Eater-Sequelize-Display.PNG)
 
-## Contribute
 
-PRs accepted.
+Clicking the devour button for a specific burger moves it to the right side into the devoured list
 
-Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
-
-## License
-
-YETC7 © 2017 Eric Tyler Cooper
+![Devoured](/public/assets/img/Burger-Eater-Sequelize-Devoured.PNG)
