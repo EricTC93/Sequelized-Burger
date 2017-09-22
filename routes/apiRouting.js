@@ -12,6 +12,7 @@ module.exports = function(app) {
 				["burger_name", 'ASC']
 			]
 		}).then(function(data) {
+			console.log(data);
 			var handleBarObj = {
 				burgers: data
 			};
